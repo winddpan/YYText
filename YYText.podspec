@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/ibireme/YYText.git', :tag => s.version.to_s }
   
   s.requires_arc = true
-  s.source_files = 'YYText/**/*.{h,m}'
-  s.public_header_files = 'YYText/**/*.{h}'
+  s.source_files = 'Sources/YYText/**/*.{h,m}'
+  s.public_header_files = 'Sources/YYText/**/*.{h}'
   
   s.frameworks = 'UIKit', 'CoreFoundation','CoreText', 'QuartzCore', 'Accelerate', 'MobileCoreServices'
 
