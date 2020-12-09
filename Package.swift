@@ -9,6 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "YYText",
+            type: .dynamic,
             targets: ["YYText"]),
     ],
     dependencies: [
@@ -21,7 +22,8 @@ let package = Package(
         .target(
             name: "YYText",
             dependencies: [],
-            path: "YYText",
+            path: "Sources",
+            sources: ["YYText"],
             publicHeadersPath: "YYText"),
         .testTarget(
             name: "YYTextTests",
